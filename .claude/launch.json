@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "doula",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/carmenmontt/Desktop/doula && exec python3 -m http.server 4322 --bind 127.0.0.1"
+      ],
+      "port": 4322
+    }
+  ]
+}
