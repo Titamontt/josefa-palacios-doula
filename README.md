@@ -25,7 +25,6 @@ Los marcadores están escritos entre corchetes para poder buscarlos. Búscalos c
 | `[INSTITUCIÓN DE FORMACIÓN]` | sobre mí | dónde se formó |
 | `[CIUDAD / REGIÓN]`, `[CIUDAD, PAÍS]` | sobre mí, footer | ubicación |
 | `[EMAIL]` | footer y `main.js` | correo de contacto |
-| `[WHATSAPP]` | contacto y footer | número en formato internacional sin `+`, p.ej. `56912345678` |
 | `[INSTAGRAM]` | footer | usuario sin `@` |
 
 ## Fotos
