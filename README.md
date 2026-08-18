@@ -24,7 +24,6 @@ Los marcadores están escritos entre corchetes para poder buscarlos. Búscalos c
 | `[FAMILIAR / EXPERIENCIA PERSONAL]` | sobre mí | la historia de origen |
 | `[INSTITUCIÓN DE FORMACIÓN]` | sobre mí | dónde se formó |
 | `[CIUDAD / REGIÓN]`, `[CIUDAD, PAÍS]` | sobre mí, footer | ubicación |
-| `[EMAIL]` | footer y `main.js` | correo de contacto |
 | `[INSTAGRAM]` | footer | usuario sin `@` |
 
 ## Fotos
