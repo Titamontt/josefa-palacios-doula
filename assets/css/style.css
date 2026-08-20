@@ -222,7 +222,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 
 .hero__title {
   font-family: var(--serif);
-  font-size: clamp(2.35rem, 1.5rem + 2.9vw, 4.4rem);
+  font-size: clamp(2.1rem, 1.4rem + 2.9vw, 4.4rem);
   font-weight: 400;
   line-height: 1.06;
   letter-spacing: -0.02em;
@@ -316,6 +316,13 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 
 .service__desc { margin: 0; color: var(--tinta-suave); max-width: 52ch; }
 
+/* Aclaración al pie de la lista de servicios */
+.services__nota {
+  margin: clamp(2rem, 4vw, 3rem) 0 0;
+  max-width: 62ch;
+  color: var(--tinta-suave);
+}
+
 /* =========================================================
    5. CITA
    ========================================================= */
@@ -324,7 +331,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .quote {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(2.2rem, 1.2rem + 4vw, 4.5rem);
+  font-size: clamp(1.75rem, 1.1rem + 2.6vw, 3.1rem);
   font-weight: 400;
   line-height: 1.12;
   letter-spacing: -0.02em;

@@ -1,4 +1,4 @@
-# Doula de la muerte y el duelo
+# Josefa Palacios, doula de fin de vida
 
 Landing page de una sola página. HTML, CSS y JavaScript planos — sin build ni
 dependencias. Se abre haciendo doble clic en `index.html`.
@@ -21,9 +21,6 @@ Los marcadores están escritos entre corchetes para poder buscarlos. Búscalos c
 
 | Marcador | Dónde | Qué es |
 |---|---|---|
-| `[FAMILIAR / EXPERIENCIA PERSONAL]` | sobre mí | la historia de origen |
-| `[INSTITUCIÓN DE FORMACIÓN]` | sobre mí | dónde se formó |
-| `[CIUDAD / REGIÓN]`, `[CIUDAD, PAÍS]` | sobre mí, footer | ubicación |
 | `[INSTAGRAM]` | footer | usuario sin `@` |
 
 ## Fotos
@@ -31,7 +28,7 @@ Los marcadores están escritos entre corchetes para poder buscarlos. Búscalos c
 Están puestas y viven en `assets/img/`:
 
 - `hero-flores.jpg` — campo de flores blancas, mitad derecha del hero
-- `josefa-retrato.jpg` — retrato de la sección Sobre mí
+- `josefa-retrato.jpg` — retrato de la sección Quién soy
 
 Se conectan con dos variables en `:root`, arriba de `assets/css/style.css`:
 
