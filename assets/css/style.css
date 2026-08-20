@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Season Mix";
-  src: url("../fonts/SeasonMix-Light-TRIAL.ttf") format("truetype");
+  src: url("../fonts/SeasonMix-Light-TRIAL.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: "PP Neue Montreal";
-  src: url("../fonts/PPNeueMontreal-Book.otf") format("opentype");
+  src: url("../fonts/PPNeueMontreal-Book.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -43,7 +43,6 @@
 
   /* Imágenes */
   --hero-img: url("../img/hero-flores.jpg");
-  --retrato-img: url("../img/josefa-retrato.jpg");
 }
 
 /* ---------- Base ---------- */
@@ -352,11 +351,13 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 }
 
 .about__media {
+  width: 100%;
+  /* sin esto, el atributo height del HTML le gana a aspect-ratio */
+  height: auto;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 25%;
   background-color: var(--crema);
-  background-image: var(--retrato-img);
-  background-size: cover;
-  background-position: center 25%;
 }
 
 /* =========================================================
