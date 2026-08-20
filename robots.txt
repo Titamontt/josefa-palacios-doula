@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://josefadoulafindevida.cl/sitemap.xml
