@@ -221,6 +221,9 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 
 .hero__title {
   font-family: var(--serif);
+  /* "Acompañamiento" apenas cabe a 375px; esto evita que rompa la
+     maqueta en pantallas más angostas o con tipografía agrandada */
+  overflow-wrap: break-word;
   font-size: clamp(2.1rem, 1.4rem + 2.9vw, 4.4rem);
   font-weight: 400;
   line-height: 1.06;
@@ -470,14 +473,6 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   line-height: 1.2;
   color: var(--crema);
 }
-
-.footer__ig {
-  display: inline-flex; flex: none;
-  color: rgba(244, 237, 225, 0.72);
-  transition: color 0.3s ease;
-}
-.footer__ig:hover { color: var(--ocre-claro); }
-.footer__ig svg { width: 26px; height: 26px; }
 
 .footer__legal {
   display: flex; justify-content: space-between; gap: 0.5rem 2rem; flex-wrap: wrap;

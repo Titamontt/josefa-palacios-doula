@@ -116,7 +116,7 @@
      Sin backend: arma un correo con los datos y lo abre en el cliente
      de mail. Para recibirlos en un servicio (Formspree, Netlify Forms,
      etc.) reemplaza este bloque por el action/method correspondiente. */
-  var DESTINATARIO = 'josefa.palacios.n@gmail.com';
+  var DESTINATARIO = 'josefadoulafindevida@gmail.com';
 
   var form = document.getElementById('form');
   var note = document.getElementById('form-note');
