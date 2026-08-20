@@ -1,5 +1,5 @@
 /* =========================================================
-   Doula de la muerte y el duelo — interacciones
+   Josefa Palacios, doula de fin de vida — interacciones
    ========================================================= */
 (function () {
   'use strict';
