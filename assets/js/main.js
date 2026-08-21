@@ -65,4 +65,44 @@
 
     if (!form.checkValidity()) {
       note.textContent = 'Revisa los campos marcados, por favor.';
-      var
+      var firstInvalid = form.querySelector(':invalid');
+      if (firstInvalid) firstInvalid.focus();
+      return;
+    }
+
+    var data = new FormData(form);
+
+    boton.disabled = true;
+    boton.textContent = 'Enviando…';
+    note.textContent = '';
+
+    fetch(FORMSPREE_ENDPOINT, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+      .then(function (response) {
+        if (response.ok) {
+          note.textContent = 'Gracias por tu mensaje, te responderé pronto.';
+          form.reset();
+          form.querySelectorAll('input, textarea').forEach(function (f) {
+            f.classList.remove('is-touched');
+          });
+        } else {
+          return response.json().then(function (payload) {
+            var mensaje = (payload && payload.errors)
+              ? payload.errors.map(function (err) { return err.message; }).join(', ')
+              : 'Ocurrió un error al enviar. Intenta de nuevo o escríbeme por WhatsApp.';
+            note.textContent = mensaje;
+          });
+        }
+      })
+      .catch(function () {
+        note.textContent = 'Ocurrió un error al enviar. Intenta de nuevo o escríbeme por WhatsApp.';
+      })
+      .finally(function () {
+        boton.disabled = false;
+        boton.textContent = textoBotonOriginal;
+      });
+  });
+})();
